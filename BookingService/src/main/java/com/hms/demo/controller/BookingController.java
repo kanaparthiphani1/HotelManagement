@@ -73,6 +73,7 @@ public class BookingController {
 	@PostMapping("/booking")
 	public void addBooking(@RequestBody Booking book) {
 		System.out.println("HYYYYY");
+		book.setFeedGiven(false);
 		if(book.getId() == 0) {
 		book.setBookingId(sequenceGeneratorService.generateSequence(book.SEQUENCE_NAME));}
 		
@@ -128,6 +129,12 @@ public class BookingController {
 		
 		@PostMapping("/feed")
 		public void postFeed(@RequestBody Feedback feed) {
+			
+			Booking bookingObj =  repository.findById(feed.getBookingId());
+			bookingObj.setFeedGiven(true);
+			repository.save(bookingObj);
+			
+			
 			feed.setId(sequenceGeneratorService.generateSequence(feed.SEQUENCE_NAME));
 			feedrepo.save(feed);
 		}

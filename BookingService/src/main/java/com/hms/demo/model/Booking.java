@@ -24,6 +24,33 @@ public class Booking {
 	private String userId;
 	
 	private String userName;
+	
+	private boolean feedGiven;
+	
+	
+	public boolean isFeedGiven() {
+		return feedGiven;
+	}
+
+	public void setFeedGiven(boolean isFeedGiven) {
+		this.feedGiven = isFeedGiven;
+	}
+
+
+	public Booking(Long hotelId, Long roomId, String userId, String userName, boolean feedGiven, LocalDate checkin,
+			LocalDate checkout, int numOfGuests, String approvalStatus, double finalPrice) {
+		super();
+		this.hotelId = hotelId;
+		this.roomId = roomId;
+		this.userId = userId;
+		this.userName = userName;
+		this.feedGiven =feedGiven;
+		this.checkin = checkin;
+		this.checkout = checkout;
+		this.numOfGuests = numOfGuests;
+		this.approvalStatus = approvalStatus;
+		this.finalPrice = finalPrice;
+	}
 
 	public String getUserName() {
 		return userName;

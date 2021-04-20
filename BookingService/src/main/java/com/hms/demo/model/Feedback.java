@@ -28,6 +28,7 @@ public class Feedback {
 	
 	private String feedDate;
 	
+
 	public String getFeedDate() {
 		return feedDate;
 	}
