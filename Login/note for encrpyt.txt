@@ -1,0 +1,41 @@
+Receptionist
+
+{
+    "id": "6068a7a95cb8c449fc248580",
+    "username": "receptionist",
+    "email": "receptionist@gmail.com",
+    "roles": [
+        "ROLE_USER",
+        "ROLE_RECEPTIONIST"
+    ],
+    "accessToken": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyZWNlcHRpb25pc3QiLCJpYXQiOjE2MTc0NzE1OTcsImV4cCI6MTYxNzU1Nzk5N30.0Vuwmivvu9S7xLSmUTPkrCSLQYnVBlS2X0s7UhF-Aq82-HSZVZtbLCDkQGI0N2asATYaSqpz4fmmOnOToA1bMA",
+    "tokenType": "Bearer"
+}
+
+Manager
+
+{
+    "id": "6068a7875cb8c449fc24857f",
+    "username": "manager",
+    "email": "manager@gmail.com",
+    "roles": [
+        "ROLE_MANAGER",
+        "ROLE_USER"
+    ],
+    "accessToken": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtYW5hZ2VyIiwiaWF0IjoxNjE3NDcxNjUyLCJleHAiOjE2MTc1NTgwNTJ9.EHVnCerOm7yng9ku59HDzQgN2SIPFrd2hIh1TctVCzQgy553R1EC9JTf4xoulheA6uDJ1ND1NqaPjs_bTR1Uqg",
+    "tokenType": "Bearer"
+}
+
+Admin
+
+{
+    "id": "6068a7395cb8c449fc24857e",
+    "username": "admin",
+    "email": "admin@gmail.com",
+    "roles": [
+        "ROLE_USER",
+        "ROLE_ADMIN"
+    ],
+    "accessToken": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTYxNzQ3MTY3NSwiZXhwIjoxNjE3NTU4MDc1fQ.txzTf6nHQqlFoWzfOelTIaTrRJ0pfa-yNtxOb86myR-EPo_yeFfbWFB617eSwCInDjwtgD_swzMXCc1lOoVfcA",
+    "tokenType": "Bearer"
+}
